@@ -7,8 +7,9 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "test": "jest --watch"
-
+        "test": "jest --watch",
+        "docker:start": "docker run -p 3000:3000 fastcampus-site",
+        "docker": "docker build . -t fastcampus-site"
     },
     "dependencies": {
         "next": "11.1.0",
